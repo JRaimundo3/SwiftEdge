@@ -1,4 +1,2 @@
 SwiftEdge
-Boas
-XAU
 
