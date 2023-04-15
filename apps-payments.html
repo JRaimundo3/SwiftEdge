@@ -489,12 +489,11 @@
                                                             <label for="status-select" class="me-2">Status</label>
                                                             <select class="form-select" id="status-select">
                                                                 <option selected="">Choose...</option>
-                                                                <option value="1">Paid</option>
-                                                                <option value="2">Awaiting Authorization</option>
-                                                                <option value="3">Payment failed</option>
-                                                                <option value="4">Cash On Delivery</option>
-                                                                <option value="5">Fulfilled</option>
-                                                                <option value="6">Unfulfilled</option>
+                                                                <option value="1">Expired</option>
+                                                                <option value="2">Not Expired</option>
+                                                                <option value="3">Paid</option>
+                                                                <option value="4">Payment failed</option>
+                                                                
                                                             </select>
                                                         </div>
                                                     </div>
@@ -502,7 +501,7 @@
                                             </div>
                                             <div class="col-xl-4">
                                                 <div class="text-xl-end mt-xl-0 mt-2">
-                                                    <button type="button" class="btn btn-danger mb-2 me-2"><i class="mdi mdi-basket me-1"></i> Add New Order</button>
+                                                    <button type="button" class="btn btn-danger mb-2 me-2"><i class="mdi mdi-basket me-1"></i> Add New Invoice</button>
                                                     <button type="button" class="btn btn-light mb-2">Export</button>
                                                 </div>
                                             </div><!-- end col-->
@@ -518,13 +517,15 @@
                                                                 <label class="form-check-label" for="customCheck1">&nbsp;</label>
                                                             </div>
                                                         </th>
-                                                        <th>Order ID</th>
+                                                        <th>Invoice ID</th>
+                                                        <th>Supplier</th>
+                                                        <th>Info</th>
                                                         <th>Date</th>
-                                                        <th>Payment Status</th>
                                                         <th>Total</th>
+                                                        <th>Expire Date</th>
+                                                        <th>Payment Status</th>
                                                         <th>Payment Method</th>
-                                                        <th>Order Status</th>
-                                                        <th style="width: 125px;">Action</th>
+                                                        <th>Edit</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -535,160 +536,32 @@
                                                                 <label class="form-check-label" for="customCheck2">&nbsp;</label>
                                                             </div>
                                                         </td>
-                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">#BM9708</a> </td>
+                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">#1/1000</a> </td>
                                                         <td>
-                                                            August 05 2018 <small class="text-muted">10:29 PM</small>
+                                                            SuperBock
+                                                        </td>
+                                                        <td>
+                                                            500L of beer
+
+                                                        </td>
+                                                        <td>
+                                                            January 05 2023
+                                                        </td>
+                                                        <td>
+                                                            $1000
+                                                        </td>
+                                                        <td>
+                                                            February 05 2023
                                                         </td>
                                                         <td>
                                                             <h5><span class="badge badge-success-lighten"><i class="mdi mdi-coin"></i> Paid</span></h5>
                                                         </td>
-                                                        <td>
-                                                            $176.41
-                                                        </td>
+                                                        
                                                         <td>
                                                             Mastercard
                                                         </td>
                                                         <td>
-                                                            <h5><span class="badge badge-info-lighten">Shipped</span></h5>
-                                                        </td>
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck3">
-                                                                <label class="form-check-label" for="customCheck3">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">#BM9707</a> </td>
-                                                        <td>August 04 2018 <small class="text-muted">08:18 AM</small></td>
-                                                        <td>
-                                                            <h5><span class="badge badge-warning-lighten"><i class="mdi mdi-timer-sand"></i> Awaiting Authorization</span></h5>
-                                                        </td>
-                                                        <td>
-                                                            $1,458.65
-                                                        </td>
-                                                        <td>
-                                                            Visa
-                                                        </td>
-                                                        <td>
-                                                            <h5><span class="badge badge-warning-lighten">Processing</span></h5>
-                                                        </td>
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck4">
-                                                                <label class="form-check-label" for="customCheck4">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">#BM9706</a> </td>
-                                                        <td>August 04 2018 <small class="text-muted">10:29 PM</small></td>
-                                                        <td>
-                                                            <h5><span class="badge badge-success-lighten"><i class="mdi mdi-coin"></i> Paid</span></h5>
-                                                        </td>
-                                                        <td>
-                                                            $801.99
-                                                        </td>
-                                                        <td>
-                                                            Credit Card
-                                                        </td>
-                                                        <td>
-                                                            <h5><span class="badge badge-warning-lighten">Processing</span></h5>
-                                                        </td>
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck5">
-                                                                <label class="form-check-label" for="customCheck5">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">#BM9705</a> </td>
-                                                        <td>August 03 2018 <small class="text-muted">07:56 AM</small></td>
-                                                        <td>
-                                                            <h5><span class="badge badge-success-lighten"><i class="mdi mdi-coin"></i> Paid</span></h5>
-                                                        </td>
-                                                        <td>
-                                                            $215.35
-                                                        </td>
-                                                        <td>
-                                                            Mastercard
-                                                        </td>
-                                                        <td>
-                                                            <h5><span class="badge badge-success-lighten">Delivered</span></h5>
-                                                        </td>
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck6">
-                                                                <label class="form-check-label" for="customCheck6">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">#BM9704</a> </td>
-                                                        <td>May 22 2018 <small class="text-muted">07:22 PM</small></td>
-                                                        <td>
-                                                            <h5><span class="badge badge-danger-lighten"><i class="mdi mdi-cancel"></i> Payment Failed</span></h5>
-                                                        </td>
-                                                        <td>
-                                                            $2,514.36
-                                                        </td>
-                                                        <td>
-                                                            Paypal
-                                                        </td>
-                                                        <td>
-                                                            <h5><span class="badge badge-danger-lighten">Cancelled</span></h5>
-                                                        </td>
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck7">
-                                                                <label class="form-check-label" for="customCheck7">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">#BM9703</a> </td>
-                                                        <td>April 02 2018 <small class="text-muted">03:02 AM</small></td>
-                                                        <td>
-                                                            <h5><span class="badge badge-success-lighten"><i class="mdi mdi-coin"></i> Paid</span></h5>
-                                                        </td>
-                                                        <td>
-                                                            $183.20
-                                                        </td>
-                                                        <td>
-                                                            Payoneer
-                                                        </td>
-                                                        <td>
-                                                            <h5><span class="badge badge-info-lighten">Shipped</span></h5>
-                                                        </td>
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                                            
                                                             <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
                                                             <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
                                                         </td>
@@ -697,26 +570,36 @@
                                                     <tr>
                                                         <td>
                                                             <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck8">
-                                                                <label class="form-check-label" for="customCheck8">&nbsp;</label>
+                                                                <input type="checkbox" class="form-check-input" id="customCheck2">
+                                                                <label class="form-check-label" for="customCheck2">&nbsp;</label>
                                                             </div>
                                                         </td>
-                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">#BM9702</a> </td>
-                                                        <td>March 18 2018 <small class="text-muted">11:19 PM</small></td>
+                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">#1/1001</a> </td>
                                                         <td>
-                                                            <h5><span class="badge badge-warning-lighten"><i class="mdi mdi-timer-sand"></i> Awaiting Authorization</span></h5>
+                                                            EPAL
                                                         </td>
                                                         <td>
-                                                            $1,768.41
+                                                            Water
+
                                                         </td>
                                                         <td>
-                                                            Visa
+                                                            February 18 2023
                                                         </td>
                                                         <td>
-                                                            <h5><span class="badge badge-warning-lighten">Processing</span></h5>
+                                                            $1000
                                                         </td>
                                                         <td>
-                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                                            April 18 2023
+                                                        </td>
+                                                        <td>
+                                                            <h5><span class="badge badge-info-lighten"><i class="mdi mdi-coin"></i>Not Expired</span></h5>
+                                                        </td>
+                                                        
+                                                        <td>
+                                                            -----------
+                                                        </td>
+                                                        <td>
+                                                            
                                                             <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
                                                             <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
                                                         </td>
@@ -725,84 +608,155 @@
                                                     <tr>
                                                         <td>
                                                             <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck9">
-                                                                <label class="form-check-label" for="customCheck9">&nbsp;</label>
+                                                                <input type="checkbox" class="form-check-input" id="customCheck2">
+                                                                <label class="form-check-label" for="customCheck2">&nbsp;</label>
                                                             </div>
                                                         </td>
-                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">#BM9701</a> </td>
-                                                        <td>February 01 2018 <small class="text-muted">07:22 AM</small></td>
+                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">#1/1002</a> </td>
                                                         <td>
-                                                            <h5><span class="badge badge-info-lighten"><i class="mdi mdi-cash"></i> Unpaid</span></h5>
+                                                            EDP
                                                         </td>
                                                         <td>
-                                                            $3,582.99
+                                                            Electricity
+
                                                         </td>
                                                         <td>
-                                                            Paypal
+                                                            February 06 2023
                                                         </td>
                                                         <td>
-                                                            <h5><span class="badge badge-info-lighten">Shipped</span></h5>
+                                                            $357
                                                         </td>
                                                         <td>
-                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                                            March 05 2023
+                                                        </td>
+                                                        <td>
+                                                            <h5><span class="badge badge-danger-lighten"><i class="mdi mdi-coin"></i> Expired</span></h5>
+                                                        </td>
+                                                        
+                                                        <td>
+                                                            -----------
+                                                        </td>
+                                                        <td>
+                                                            
                                                             <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
                                                             <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
                                                         </td>
                                                     </tr>
+
                                                     <tr>
                                                         <td>
                                                             <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck10">
-                                                                <label class="form-check-label" for="customCheck10">&nbsp;</label>
+                                                                <input type="checkbox" class="form-check-input" id="customCheck2">
+                                                                <label class="form-check-label" for="customCheck2">&nbsp;</label>
                                                             </div>
                                                         </td>
-                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">#BM9700</a> </td>
-                                                        <td>January 22 2018 <small class="text-muted">08:09 PM</small></td>
+                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">#1/1003</a> </td>
                                                         <td>
-                                                            <h5><span class="badge badge-success-lighten"><i class="mdi mdi-coin"></i> Paid</span></h5>
+                                                            Delta
                                                         </td>
                                                         <td>
-                                                            $923.95
+                                                            Coffee
+
                                                         </td>
                                                         <td>
-                                                            Credit Card
+                                                            February 05 2023
                                                         </td>
                                                         <td>
-                                                            <h5><span class="badge badge-success-lighten">Delivered</span></h5>
+                                                            $1000
                                                         </td>
                                                         <td>
-                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                                            March 05 2023
+                                                        </td>
+                                                        <td>
+                                                            <h5><span class="badge badge-danger-lighten"><i class="mdi mdi-coin"></i> Expired</span></h5>
+                                                        </td>
+                                                        
+                                                        <td>
+                                                            -----------
+                                                        </td>
+                                                        <td>
+                                                            
                                                             <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
                                                             <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
                                                         </td>
                                                     </tr>
+                                                    
                                                     <tr>
                                                         <td>
                                                             <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck11">
-                                                                <label class="form-check-label" for="customCheck11">&nbsp;</label>
+                                                                <input type="checkbox" class="form-check-input" id="customCheck2">
+                                                                <label class="form-check-label" for="customCheck2">&nbsp;</label>
                                                             </div>
                                                         </td>
-                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">#BM9699</a> </td>
-                                                        <td>January 17 2018 <small class="text-muted">02:30 PM</small></td>
+                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">#1/1004</a> </td>
+                                                        <td>
+                                                            Zurich
+                                                        </td>
+                                                        <td>
+                                                            Insurance
+
+                                                        </td>
+                                                        <td>
+                                                            January 05 2023
+                                                        </td>
+                                                        <td>
+                                                            $1000
+                                                        </td>
+                                                        <td>
+                                                            January 05 2023
+                                                        </td>
                                                         <td>
                                                             <h5><span class="badge badge-success-lighten"><i class="mdi mdi-coin"></i> Paid</span></h5>
                                                         </td>
-                                                        <td>
-                                                            $5,177.68
-                                                        </td>
+                                                        
                                                         <td>
                                                             Mastercard
                                                         </td>
                                                         <td>
-                                                            <h5><span class="badge badge-info-lighten">Shipped</span></h5>
-                                                        </td>
-                                                        <td>
-                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                                            
                                                             <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
                                                             <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
                                                         </td>
                                                     </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" id="customCheck2">
+                                                                <label class="form-check-label" for="customCheck2">&nbsp;</label>
+                                                            </div>
+                                                        </td>
+                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">#1/1005</a> </td>
+                                                        <td>
+                                                            SuperBock
+                                                        </td>
+                                                        <td>
+                                                            500L of beer
+
+                                                        </td>
+                                                        <td>
+                                                            August 05 2022
+                                                        </td>
+                                                        <td>
+                                                            $1000
+                                                        </td>
+                                                        <td>
+                                                            September 05 2022
+                                                        </td>
+                                                        <td>
+                                                            <h5><span class="badge badge-success-lighten"><i class="mdi mdi-coin"></i>Paid</span></h5>
+                                                        </td>
+                                                        
+                                                        <td>
+                                                            Mastercard
+                                                        </td>
+                                                        <td>
+                                                            
+                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    
                                                     
                                                 </tbody>
                                             </table>

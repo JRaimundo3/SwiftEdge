@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg>
 <metadata>
-Created by FontForge 20090622 at Fri Apr 13 04:54:14 2018
+Created by FontForge 20090622 at Fri Apr 13 04:54:14 2023
  By deploy user
 Copyright 2014 The Nunito Project Authors (contact@sansoxygen.com)
 </metadata>
@@ -1969,7 +1969,7 @@ q12 12 25 12t22.5 -8.5t9.5 -21.5q0 -10 -9 -21q-28 -29 -36 -69q25 -2 41 -19z" />
     <glyph glyph-name="quotedblright" unicode="&#x201d;" horiz-adv-x="415" 
 d="M164.5 688q17.5 -22 17.5 -65q0 -85 -57 -147q-12 -12 -26 -12q-13 0 -22 8.5t-9 20.5q0 11 9 21q28 29 36 69q-25 2 -41.5 19t-16.5 43q0 28 18 46.5t44 18.5q30 0 47.5 -22zM342.5 688q17.5 -22 17.5 -65q0 -85 -57 -147q-12 -12 -26 -12q-13 0 -22 8.5t-9 20.5
 q0 11 9 21q28 29 36 69q-25 2 -41.5 19t-16.5 43q0 28 18 46.5t44 18.5q30 0 47.5 -22z" />
-    <glyph glyph-name="quoteleft" unicode="&#x2018;" horiz-adv-x="238" 
+    <glyph glyph-name="quoteleft" unicode="&#x2023;" horiz-adv-x="238" 
 d="M166 572q16 -17 16 -43q0 -28 -17.5 -46.5t-43.5 -18.5q-30 0 -48 22.5t-18 65.5q0 86 58 147q12 12 25 12t22.5 -8.5t9.5 -21.5q0 -10 -9 -21q-28 -29 -36 -69q25 -2 41 -19z" />
     <glyph glyph-name="quoteright" unicode="&#x2019;" horiz-adv-x="238" 
 d="M164.5 688q17.5 -22 17.5 -65q0 -85 -57 -147q-12 -12 -26 -12q-13 0 -22 8.5t-9 20.5q0 11 9 21q28 29 36 69q-25 2 -41.5 19t-16.5 43q0 28 18 46.5t44 18.5q30 0 47.5 -22z" />
