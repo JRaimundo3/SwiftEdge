@@ -952,7 +952,27 @@
 
         <!-- demo app -->
         <script src="assets/js/pages/demo.customers.js"></script>
-        <!-- end demo js-->
+        <!-- end demo js--> 
+       <script>
+            const lightModeCheck = document.getElementById('light-mode-check');
+            const darkModeCheck = document.getElementById('dark-mode-check');
+
+            lightModeCheck.addEventListener('change', function() {
+            if (this.checked) {
+                darkModeCheck.checked = false;
+            } else {
+                darkModeCheck.checked = true;
+            }
+            });
+
+            darkModeCheck.addEventListener('change', function() {
+            if (this.checked) {
+                lightModeCheck.checked = false;
+            } else {
+                lightModeCheck.checked = true;
+            }
+            });
+        </script>
 
     </body>
 </html>

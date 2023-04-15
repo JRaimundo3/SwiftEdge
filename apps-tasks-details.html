@@ -802,5 +802,26 @@
         <!-- init js -->
         <script src="assets/js/ui/component.fileupload.js"></script>
 
+        <script>
+            const lightModeCheck = document.getElementById('light-mode-check');
+            const darkModeCheck = document.getElementById('dark-mode-check');
+
+            lightModeCheck.addEventListener('change', function() {
+            if (this.checked) {
+                darkModeCheck.checked = false;
+            } else {
+                darkModeCheck.checked = true;
+            }
+            });
+
+            darkModeCheck.addEventListener('change', function() {
+            if (this.checked) {
+                lightModeCheck.checked = false;
+            } else {
+                lightModeCheck.checked = true;
+            }
+            });
+        </script>
+        
     </body>
 </html>
